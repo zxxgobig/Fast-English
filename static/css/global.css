@@ -1,0 +1,772 @@
+@charset "utf-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+h1{margin:.67em 0;font-size:2em}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-size:1em;font-family:monospace,monospace}
+button,input,optgroup,select,textarea{margin:0;outline:0;color:inherit;font:inherit}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
+input{line-height:normal}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+input[type="search"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid #c0c0c0}
+legend{padding:0;border:0}
+textarea{overflow:auto}
+optgroup{font-weight:bold}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+p{
+	margin: 0px;
+	padding: 0px;
+}
+ul,li{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.c{
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: #0060AA;
+}
+a:hover{
+	text-decoration: underline;
+}
+body{
+
+	line-height: 1;
+	color: #000;
+	font-size: 1em;
+	font-family:Arial,sans-serif;
+	background: #F4F8FB;
+	/*background-image: url(../img/bg123546743.jpg);*/
+	background-position-y:-130px;
+	background-attachment:fixed;
+}
+header,
+section,
+footer{}
+footer{
+	line-height: 20px;
+	text-align: center;
+	color: #7C7C7C;
+	font-size: 0.7em;
+	background: #E6E6E6
+}
+.gw{
+	width: 890px;
+	margin: auto;
+	/*background-image: url(../img/toumingbai80.png);*/
+}
+@media screen and (max-width: 950px) { /*当屏幕尺寸小于 px时，应用下面的CSS样式*/
+	.gw{
+		width: 100%;
+	}
+}
+
+/*库*/
+.btnAdd1{
+	display: inline-block;
+	color: #fff;
+	background: #0084B4;
+	padding: 10px;
+	border-radius: 5px;
+}
+.btnAdd1:hover{
+	background: #0294C9;
+	text-decoration: none;
+}
+.btnLogin{
+	display: inline-block;
+	color: #fff;
+	background: #0084B4;
+	padding: 10px;
+	border-radius: 5px;
+	border:1px solid #E0E0E0;
+}
+.btnLogin:hover{
+	text-decoration: none;
+	background: #0398CF;
+	
+}
+.btnListToload{
+	line-height: 70px;
+	text-align: center;
+	color: #606060
+}
+.btnListToload span{
+	border: 1px solid #B2B2B2;
+	padding: 10px;
+	margin: 10px;
+}
+.btnListToload span:hover{
+	cursor:pointer;
+	color: #0084B4;
+	border-color:#0084B4;
+}
+.btnListToload .ended,
+.btnListToload .ended:hover{
+	color: #A2A3A4;
+	border: 1px solid #CBCCCD;
+}
+input,
+textarea{
+	background: #fff;
+	border:1px solid #BFC0C2;
+	padding: 8px
+}
+/*全局*/
+
+.topBar{
+	height: 52px;
+	background: #fff;
+	border-bottom: 1px solid #D0D4D7;
+}
+.topBar .logo{
+	margin-left: 218px;
+	margin-top: 8px
+}
+.topBar .logo img{
+	height: 36px;
+	width:auto;
+}
+.topBar .linkLeft a{
+	display: inline-block;
+	color: #1B1B1D;
+	text-decoration: none;
+	padding-top: 19px;
+	padding-bottom: 17px;
+	padding-left: 15px;
+	padding-right: 15px
+}
+.topBar .linkLeft a:hover,
+.topBar .linkLeft .changed{
+	color: #0084B4;
+	border-bottom: 3px solid #0084B4;
+	padding-bottom: 14px;
+	margin-bottom: -1px;
+}
+
+.topBar .mbLks{
+	line-height: 50px;
+	margin-right: 10px
+}
+.topBar .imgFace{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	border:1px solid #E2E5E7;
+}
+.topBar .addSentence{
+	margin:8px 5px 8px 5px;
+}
+.topBar .loginBarIn{
+	margin:8px 5px 8px 5px;
+}
+.topBar .loginBarIn a{
+	display: inline-block;
+	padding: 10px;
+}
+@media screen and (max-width: 950px) {
+	.topBar .logo{
+		margin-left: 10px;
+		/*width: calc(100%-180px);
+		width: -moz-calc(100%-180px);
+		width: -webkit-calc(100%-180px);*/
+		text-align: center;
+	}
+}
+.footer{
+	margin-top: 15px;
+}
+.footer,
+.footer a{
+	font-size: 0.9em;
+	color: #606466
+}
+.footer .copyright{
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	width: 560px;
+	border-right: 1px solid #ccc;
+}
+.footer .codepic{
+	margin-right: 50px
+}
+.footer .codepic img{
+	width: 60px;
+	height: 60px
+}
+.footer .qqclubMsg{
+	line-height: 60px;
+	margin-right: 50px;
+	padding-top: 7px
+}
+@media screen and (max-width: 950px) {
+	.footer .copyright{
+		float: left;
+		width: auto;
+		text-align: center;
+		margin-left: 20px;
+		border:0px;
+	}
+	.footer .codepic{
+		display: none;
+	}
+	.footer .qqclubMsg{
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+#theAddHTMLs>div{
+	display: none;
+}
+#theAddHTMLs #is_1{
+	top: 175px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+#theAddHTMLs #is_1>div{
+	color: #0084B4;
+	/*font-weight: bold;*/
+	display: inline-block;
+	background: #fff;
+	border:1px solid #0084B4;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+
+/*页面*/
+.noteP .addASentence{
+	margin: 15px;
+	/*width:-moz-calc(100%-50px);
+	width:-webkit-calc(100%-50px);
+	width: calc(100%-50px);	*/
+	width: 840px;
+}
+.noteP .addSentenceForm{
+	display: none;
+	margin: 15px;
+}
+.noteP .addSentenceForm .l{
+	width: 790px;
+}
+.noteP .addSentenceForm .r{
+
+}
+.noteP .addSentenceForm input[name="en"]{
+	width: 100%;
+	border-right: none;
+}
+.noteP .addSentenceForm input[name="ch"]{
+	width: 100%;
+	border-top:none;
+	border-right: none;
+}
+.noteP .addSentenceForm input[type="submit"]{
+	width: 52px;
+	height: 75px;
+}
+@media screen and (max-width: 950px) {
+	.noteP .addASentence{
+		width: 85%;
+	}
+	.noteP .addSentenceForm .l{
+		width: 80%
+	}
+}
+.noteP .sentenceListItem{
+	padding: 15px 0px 10px 35px;
+}
+.noteP .sentenceListItem a{
+	display: inline-block;
+	color: #191A1E;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.noteP .sentenceListItem a:hover{
+	color: #0060AA
+}
+.noteP .sentenceListItem .isSelected{
+	color: #0060AA
+}
+.noteP .sentenceList{
+	background: #fff;
+	border:1px solid #CFDAE0;
+}
+.noteP .sentenceList li{
+	padding:30px;
+}
+.noteP .sentenceList li{
+	border-bottom: 1px dashed #ccc;
+}
+.noteP .sentenceList li .serial{
+	color: #7A7A7A
+}
+.noteP .sentenceList li .mainTxt{
+	margin-left: 20px;
+}
+.noteP .sentenceList li .mainTxt .chCont{
+
+}
+.noteP .sentenceList li .mainTxt .enCont{
+	margin-bottom: 5px;
+}
+.noteP .sentenceList li .btnImLearn{
+	font-size: .9em;
+	margin-left: 15px;
+}
+.noteP .sentenceList li .btnTest{
+	font-size: .9em;
+	margin-left: 15px;
+}
+.noteP .sentenceList_noContent{
+	text-align: center;
+	line-height: 230px;
+	color: #738186
+}
+.noteP .testSentenceBox{
+	line-height: 1.5;
+	padding:30px 35px 30px 35px;
+	background: #fff;
+	border:1px solid #CFDAE0;
+}
+.noteP .testSentenceBox .inputTranslate{
+	padding:0px;
+	width: 100%;
+	border-width: 0px 0px 1px 0px;
+}
+.noteP .testSentenceBox .functions{
+	margin-top: 10px
+}
+.noteP .testSentenceBox .functions .testState{
+	font-size: .85em;
+	color: #00B459
+}
+.entryP{
+
+}
+.entryP .entryTopBar{
+	margin-top: 20px;
+	text-align: center;
+}
+.entryP .entryBox{
+	width: 490px;
+}
+.entryP .entryBox ul{
+	margin: 88px 0px 88px 120px;
+}
+.entryP .entryBox ul li{
+
+}
+.entryP .entryBox ul li>div{
+	color: #7D7D7D;
+	font-size: 0.9em;
+	padding: 5px 10px 10px 10px;
+}
+.entryP .entryBox ul li input[name="uname"]{
+	width: 270px;
+}
+.entryP .entryBox ul li input[name="pass"]{
+	width: 310px;
+}
+.entryP .entryBox ul li input[name="repass"]{
+	width: 310px;
+}
+.entryP .entryBox ul li input[name="code"]{
+	width: 120px;
+}
+@media screen and (max-width: 950px) { /*当屏幕尺寸小于 px时，应用下面的CSS样式*/
+	.entryP .entryBox{
+		width: 100%;
+	}
+	.entryP .entryBox ul{
+		margin: 20px;
+	}
+	.entryP .entryBox ul li input[name="uname"]{
+		width: 95%;
+	}
+	.entryP .entryBox ul li input[name="pass"]{
+		width: 95%;
+	}
+	.entryP .entryBox ul li input[name="repass"]{
+		width: 95%;
+	}
+	.entryP .entryBox ul li input[name="code"]{
+		width: 50%;
+	}
+	.entryP .entryBox ul .btnBox{
+		text-align: center;
+	}
+}
+
+.entryP .someMsgBox{
+	width: 400px;
+}
+.entryP .someMsgBox .topLinksBox{
+	margin: 50px;
+	margin-bottom: 0px;
+}
+.entryP .someMsgBox .registerTh{
+	line-height: 1.5;
+	margin: 50px;
+	margin-top: 20px;
+}
+.entryP .someMsgBox .loginTh{
+	line-height: 1.5;
+	margin: 50px;
+	margin-top: 20px;
+}
+@media screen and (max-width: 950px) {
+	.entryP .someMsgBox .registerTh>img,
+	.entryP .someMsgBox .loginTh>img{
+		display: none;
+	}
+}
+
+.articleP .navigationBar{
+	text-align: center;
+	margin-top: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.articleP .navigationBar a{
+	display: inline-block;
+	padding: 10px;
+	color: #383838;
+	font-weight: bold;
+}
+.articleP .navigationBar a:hover{
+
+}
+.articleP .everydaySectenceBox{
+	padding: 20px;
+	padding-top: 15px
+}
+.articleP .everydaySectenceBox .ttM{
+	color: #969696;
+	font-style: oblique;
+	font-size: .8em
+}
+.articleP .everydaySectenceBox .contM{
+	font-size: 1.05em;
+	color: #00AD8F
+}
+.articleP .frontPageBox{
+	width: 670px;
+	height: 150px;
+
+	overflow: hidden;
+	background: #ccc
+
+}
+.articleP .frontPageBox .slideImgs{
+}
+.articleP .frontPageBox .slideImgs img{
+	
+}
+.articleP .frontPageBox .slideTitles{
+
+}
+.articleP .loginBox{
+	width: 220px
+}
+.articleP .loginBox form ul{
+	margin-left: 10px;
+	margin-right: 10px
+}
+.articleP .loginBox form ul li{
+	
+}
+.articleP .loginBox form ul li>div{
+	padding: 1px;
+	font-size: 0.9em;
+	color: #6D6D6D;
+}
+.articleP .loginBox form ul li input[name="uname"]{
+	width: 180px
+}
+.articleP .loginBox form ul li input[name="pass"]{
+	width: 180px
+}
+.articleP .loginBox form ul .btnBox [type="submit"]{
+	width: 100px
+}
+.articleP .loginBox .memberMsgGo{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 150px;
+	background: #fff;
+	text-align: center;
+}
+.articleP .articleListBox{
+	margin-top: 15px;
+}
+.articleP .articleListBox li{
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 286.66666px;
+	background: #fff
+}
+.articleP .articleListBox li .className{
+	color: #756565;
+	line-height: 1.5
+}
+.articleP .articleListBox li .imgTop{
+	overflow: hidden;
+	height: 150px;
+}
+.articleP .articleListBox li .titles{
+	font-size: .95em;
+	min-height: 150px
+}
+.articleP .articleListBox li .titles li{
+	margin-top: 5px
+}
+.articleP .articleListBox li .titles li:nth-child(2n){
+	background: #F0F8FF
+}
+.articleP .articleListBox li .titles li a{
+	/*color: #333333*/
+}
+.articleP .articleListBox li .titles .dataMsgs{
+	color: #4F4F4F
+}
+
+
+.articleP .articleXMain{
+	background: #fff;
+	width: 735px
+}
+.articleP .articleXMain .contBar{
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+.articleP .articleXMain .contBar .titleM{
+	margin-top: 10px;
+	line-height: 1.2;
+}
+.articleP .articleXMain .contBar .titleM .cht{
+	font-weight: bold;
+	font-size: 1.1em;	
+}
+.articleP .articleXMain .contBar .titleM .ent{
+
+}
+.articleP .articleXMain .contBar .msgs{
+	color: #5D626B;
+	font-size: .95em;
+	padding-top: 10px;
+}
+
+.articleP .articleXMain .contentM{
+	line-height: 1.5;
+	padding: 15px;
+	padding-top: 0px;
+}
+.articleP .functionalM{
+	width: 155px;
+}
+.articleP .functionalM .mainFs{
+	text-align: center;
+	height: 85px;
+	line-height: 85px
+}
+.articleP .articleListM{
+	background: #fff
+}
+.articleP .articleListM li{
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.articleP .articleListM .titleM{
+	line-height: 1.1;
+	padding-bottom: 5px;
+}
+.articleP .articleListM a{
+	color: #2A2A2A
+}
+.articleP .articleListM a:hover{
+	color: #1A1A1A;
+	text-decoration:none;
+}
+.articleP .articleListM a:hover>li{
+	background: #DBF6FF
+}
+.articleP .articleListM .titleM .chtitle{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.articleP .articleListM .titleM .entitle{
+
+}
+.articleP .articleListM .imgM{
+	width: 286.67px;
+	height: 150px;
+	overflow: hidden;
+	background: #ccc;
+}
+.articleP .articleListM .contM{
+	color: #4F4F4F;
+	padding-top: 10px;
+	line-height: 1.3;
+	margin-left: 7px;
+	width: 560px
+}
+.articleP .articleListM .contM .msgs{
+	font-size: .8em
+}
+
+
+
+
+
+
+
+
+
+
+.aboutusP .contMain{
+	line-height: 1.5;
+	text-indent:2em; 
+	padding: 10px;
+	color: #181818
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mngP{
+
+}
+.mngP header{
+	padding: 10px;
+	background: #D0E0EA
+}
+.mngP footer{
+	padding: 10px;
+}
+.mngP .loginForm{
+	margin: 20px;
+	text-align: center;
+}
+.mngP .dataList{
+	width: 100%
+}
+.mngP .dataList tr{
+	
+}
+.mngP .dataList tr td{
+	padding: 5px
+}
+.mngP .dataList .tt{
+	background: #ccc;
+}
+.mngP .dataList .cont{
+	font-size: .9em
+}
+
+.mngP .articleEdit{
+	width: 100%
+}
+.mngP .articleEdit tr{
+	
+}
+.mngP .articleEdit tr td{
+	padding: 5px
+}
+.mngP .articleEdit [type="text"]{
+	width: 80%;
+}
+.mngP .articleEdit [name="cont"]{
+	width: 90%;
+	height: 475px
+}
+
+.mngP .daysentenceEdit{
+	width: 100%;
+	margin: 15px
+}
+.mngP .daysentenceEdit textarea{
+	width: 90%;
+}
+
+.mngP .indexslideEdit{
+	width: 100%;
+	margin: 15px
+}
+.mngP .indexslideEdit input[type="text"]{
+	width: 80%
+}
+
