@@ -17,7 +17,7 @@ if($_SERVER['HTTP_HOST'] == '127.0.0.1'){//本地
 	define('CONN_HOST','localhost');
 	define('CONN_DB','ibobao');
 	define('CONN_NAME','ibobao');
-	define('CONN_PASS','3914213abc');
+	define('CONN_PASS','123456');
 }
 //运行
 require './run.php';
